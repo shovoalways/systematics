@@ -1,0 +1,626 @@
+/*=======================================
+ Common CSS
+========================================*/
+body{
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.aligenleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.aligenright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligencenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+/*=======================================
+ Top Header CSS
+========================================*/
+.header_area{
+    width: 100%; 
+    clear: both;
+}
+
+#top_header_area{
+    background: #ba2e1f;
+    padding: 15px 0;
+    width: 100%;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+.mini_menu{
+    padding-top: 5px;
+    float: left;
+    width: 70%;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mini_menu ul li::after{
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    height: 12px;
+    width: 1px;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+}
+.search_area{
+    float: right;
+    width: 30%;
+}
+.search_area form{
+    background: #fff;
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+    max-width: 210px;
+    width: 96%;
+}
+.search_area input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search_area input[type="submit"]{
+    background: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 23%;
+    cursor: pointer;
+}
+
+
+
+
+/*=======================================
+ Main Header CSS
+========================================*/
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    padding: 40px 0;
+    overflow: hidden;
+}
+.logo_area{
+    float: left;
+    width: 240px;
+}
+.social_area{
+    padding-top: 20px;
+    float: right;
+    max-width: 600px;
+    width: 100%;
+}
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    background: #333333;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 8px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+.social_area ul li a:hover i{
+    background: #ba2e1f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #0174B0;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background: #41B7E5;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+    background: #D64134;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background: #DE2A32;
+}
+.social_area ul li a:hover i.fa-rss{
+    background: #ee802f;
+}
+
+
+
+
+
+
+/*=======================================
+ Main Menu CSS
+========================================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+    background: #333333;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1
+}
+.inner_menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+
+/*Dropdown Style*/
+
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left:-999999px;
+    top: 33px;
+}
+
+#main_menu ul li:hover ul{
+    left:0;
+}
+
+#main_menu ul li:hover ul ul{
+    left:-999999px;
+}
+#main_menu ul ul ul{
+    left: -999999px;
+    top: 0px;
+    
+}
+#main_menu ul li ul li:hover ul{
+    left:180px;
+}
+
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li:hover a{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li:hover ul li a{
+    background: none;
+    color: #fff;
+}
+
+#main_menu ul ul li ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+
+
+
+
+
+/*=======================================
+ Slider CSS
+========================================*/
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+
+
+
+/*=======================================
+ Hero Area CSS
+========================================*/
+#hero_area{
+  background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.inner_hero{
+    overflow: hidden;
+}
+.inner_hero h2{
+    color: #000000;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.inner_hero a:hover{
+    color: #000;
+}
+
+/*=======================================
+ Work CSS
+========================================*/
+#work_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+}
+.child_work a:hover{
+    color: #262626;
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service_area{}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_service .service_image{
+    width: 25%;
+    float: left;
+}
+.child_service .service_text{
+    width: 75%;
+    float: right;
+}
+.child_service .service_text h3{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.child_service .service_text p{
+    margin-top: 0;
+    line-height: 1.4em
+}
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px 15px 65px
+}
+.child_testimonial h3 span{
+    font-weight: normal;
+}
+
+
+/*=======================================
+ Footer Area CSS
+========================================*/
+#footer_area{
+    background: #fff;
+    padding: 45px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_footer{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 21%;
+    float: left;
+}
+.child_footer h3{
+    border-top: 1px solid #666666;
+    color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child_footer h4{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.child_footer h4 a{
+    color: #666666;
+    float: none;
+    text-decoration: none;
+}
+.child_footer h4 a:hover{
+    color: #b92d1f;
+}
+.child_footer h6{
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+.child_footer p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_footer p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_blog {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.child_blog a{
+    color: #b92d1f;
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+.child_footer p a:hover{}
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.child_footer ul ul{
+    display: none;
+}
+.child_footer li{
+    background:url(img/next.png) no-repeat center left;
+    display: block;
+    border-bottom: 1px solid #666666;
+    padding-left: 18px;
+    padding-bottom: 8px;
+}
+.child_footer li:last-child{
+    border-bottom: 0px solid;
+}
+.child_footer li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child_footer li a:hover{color: #b92d1f;}
+.child_footer input{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 90% 
+}
+.child_footer textarea{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 90%
+}
+.child_footer input[type="submit"]{
+    width: 80px;
+    color: #b92d1f;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+    background: #b92d1f;
+    color: #fff;
+}
+
+
+
+/*=======================================
+ Copyright Area CSS
+========================================*/
+#copyright_area{
+    background: #f2f2f2;
+    padding: 20px 0;
+}
+.inner_copyright{
+    overflow: hidden
+}
+.inner_copyright p{
+    margin: 0;
+    color: #919191;
+    font-size: 12px;
+}
+.left_copyright{
+    float: left;
+    width: 60%
+}
+.right_copyright{
+    float: right;
+    text-align: right;
+    width: 40%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
