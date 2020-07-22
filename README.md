@@ -1,5 +1,5 @@
 # systematics
-I created a PSD to HTML Tutorial serials. Here is the source code
+I created a PSD to HTML Tutorial serials. This series is completed and the code is ready for anyone who want to learn PSD to HTML too. Here is the source code
 
 🍕🍕🌮🌮 Tutorial Link
 =================
